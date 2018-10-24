@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1A000000">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/second_gallery_image"
+                android:src="@drawable/ic_menu_camera" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/second_gallery_image_description"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Earthquake"
+                android:textColor="#FF0000"
+                android:textStyle="bold|italic"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/second_gallery_info"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="The information is provided here"
+                android:textSize="15sp"
+                android:textColor="#565555"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</ScrollView>
