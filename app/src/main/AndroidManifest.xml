@@ -20,18 +20,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FirstGalleryActivity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".SecondGalleryActivity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".AboutActivity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".CallingActivity"
-            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".FirstGalleryActivity" />
+        <activity android:name=".SecondGalleryActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".CallingActivity" />
         <activity android:name=".KitActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".LinksActivity"
-            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".LinksActivity" />
     </application>
 
 </manifest>

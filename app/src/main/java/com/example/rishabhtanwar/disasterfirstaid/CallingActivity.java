@@ -12,6 +12,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 public class CallingActivity extends AppCompatActivity {
@@ -33,6 +34,7 @@ public class CallingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTitle("State Emergency Numbers");
         setContentView(R.layout.activity_calling);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         initRecyclerView();
     }
@@ -57,6 +59,16 @@ public class CallingActivity extends AppCompatActivity {
             String dial = "tel:" + number;
             startActivity(new Intent(Intent.ACTION_CALL, Uri.parse(dial)));
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if(id == android.R.id.home){
+            this.finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

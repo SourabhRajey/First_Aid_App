@@ -24,10 +24,6 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    SharedPreferences sharedPreferences;
-    SharedPreferences.Editor editor;
-    String str;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,22 +51,10 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        sharedPreferences = getSharedPreferences("current_frame", Context.MODE_PRIVATE);
-        str = sharedPreferences.getString("frame", null);
         if(savedInstanceState == null){
             setTitle("Emergencies");
-            getSupportFragmentManager().beginTransaction().replace(R.id.main_layout, new FirstFragment()).addToBackStack(null).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.main_layout, new FirstFragment()).commit();
             navigationView.getMenu().getItem(0).setChecked(true);
-        }
-        else if(str.equals("1")){
-            setTitle("Emergencies");
-            getSupportFragmentManager().beginTransaction().replace(R.id.main_layout, new FirstFragment()).addToBackStack(null).commit();
-            navigationView.getMenu().getItem(0).setChecked(true);
-        }
-        else{
-            setTitle("Information");
-            getSupportFragmentManager().beginTransaction().replace(R.id.main_layout, new SecondFragment()).addToBackStack(null).commit();
-            navigationView.getMenu().getItem(1).setChecked(true);
         }
     }
 
@@ -114,11 +98,11 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_emergencies) {
             setTitle("Emergencies");
-            getSupportFragmentManager().beginTransaction().replace(R.id.main_layout, new FirstFragment()).addToBackStack(null).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.main_layout, new FirstFragment()).commit();
 
         } else if (id == R.id.nav_information) {
             setTitle("Information");
-            getSupportFragmentManager().beginTransaction().replace(R.id.main_layout, new SecondFragment()).addToBackStack(null).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.main_layout, new SecondFragment()).commit();
 
         } else if (id == R.id.nav_kit_contents) {
             Intent intent = new Intent(this,KitActivity.class);
@@ -142,12 +126,4 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        sharedPreferences = getSharedPreferences("current_frame", Context.MODE_PRIVATE);
-        editor = sharedPreferences.edit();
-        editor.putString("frame", null);
-        editor.commit();
-    }
 }

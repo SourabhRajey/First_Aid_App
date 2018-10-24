@@ -91,18 +91,6 @@ public class SecondFragment extends Fragment {
     private ArrayList<Integer> mImage = new ArrayList<>();
     private ArrayList<String> mInfo = new ArrayList<>();
 
-    SharedPreferences sharedPreferences;
-    SharedPreferences.Editor editor;
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        sharedPreferences = context.getSharedPreferences("current_frame", Context.MODE_PRIVATE);
-        editor = sharedPreferences.edit();
-        editor.putString("frame", "2");
-        editor.commit();
-    }
-
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -145,12 +133,4 @@ public class SecondFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
     }
 
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        sharedPreferences = getContext().getSharedPreferences("current_frame", Context.MODE_PRIVATE);
-        editor = sharedPreferences.edit();
-        editor.putString("frame", null);
-        editor.commit();
-    }
 }
