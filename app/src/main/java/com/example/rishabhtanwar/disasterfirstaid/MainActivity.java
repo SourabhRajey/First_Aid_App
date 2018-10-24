@@ -18,11 +18,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private long backPressedTime;
+    private Toast backToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,8 +68,16 @@ public class MainActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            if(backPressedTime + 2000 > System.currentTimeMillis()){
+                backToast.cancel();
+                super.onBackPressed();
+                return;
+            }else{
+                backToast = Toast.makeText(MainActivity.this,"Press back again to exit",Toast.LENGTH_SHORT);
+                backToast.show();
+            }
         }
+        backPressedTime = System.currentTimeMillis();
     }
 
     @Override
@@ -83,8 +95,9 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.action_help) {
+            Intent intent = new Intent(this,HelpActivity.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);
