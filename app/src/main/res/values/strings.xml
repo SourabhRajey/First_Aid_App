@@ -3,8 +3,58 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Disaster First Aid</string>
-    <string name="nav_header_subtitle">Wellcome</string>
+    <string name="nav_header_subtitle">Welcome</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_help">Help</string>
     <string name="Emergency_activity">Emergencies</string>
+    <string name="mouthpiece">A pocket mask or pocket face mask or CPR mask is a device used to safely deliver rescue breaths during
+        a cardiac arrest or respiratory arrest(can be obtained from a loacal red cross.</string>
+    <string name="blanket">A blanket van be used to extiguish fire around some object or can be used in cold.</string>
+    <string name="flash_light">Falsh light is important in case your accident occurs at night or the disaster also shuts down the
+        power.Sometimes accidents happen in the dark(like you are on camping trip and you get mauled by a bear in night.</string>
+    <string name="gloves">The first thing you need in your First Aid kit should be your gloves.When we think about gloves in first
+        aid kit, we think about blood. We wear gloves to protect ourselves from all body fluids which are all capanle of transferring diseases.</string>
+    <string name="tooth">Kids who lose a baby tooth would not need it replaced. But when an older child or teen loses a permanent
+        tooth, its a dental emergency.If a tooth preservation kit or a container filled with BSS is not available,
+        a knocked out tooth can be put in a container of milk or saliva of your child for transport.</string>
+    <string name="thermometer">A first-aid kit should contain a thermometer to measure body tempreture. An oral digital thermometer
+        is probably the best choice.Digital thermomteres used in ear are more accurate but also a little expensive.</string>
+    <string name="calamine">Calamine is main ingredient in calamine lotion and is used as an antipruritic to treat sun burn,
+        eczema, rashes,poison ivy, chicken pox, nsect bites, or sting. It is used as a mild antiseptic to prevent
+        infections that can be caused by scratching the affected area.</string>
+    <string name="cold">Instant Cold Compress temporarily relieves minor pain and swelling for sprains, strains, aches,
+        bruising and sore joints. The urgent first aid instant cold packs are conveniently disposable with no
+        pre-chilling required for quick, effective relief.No messy ice bags needed.Just shake, squeeze,
+        shake again and apply for instant cool comfort and treatment of injuries.</string>
+    <string name="pins">Safety pins are commonly used to fasten pieces of fabric or clothing together.Safety
+        pins are usually a special version with extra safe cover.</string>
+    <string name="scissors">While the most common use of scissors is for cutting gauze and sometimes even adhesive
+        bandages to an appropriate length.It is also used for other tasks such as cutting away
+        clothing to expose injured areas to be able to treat wounds better.</string>
+    <string name="aceto">Adding Acetaminopheb to non steroidal anti flammatory drugs (NSAIDs), can be effective way to pain relief.</string>
+    <string name="hydro">Hydrocortisone is a typical steroid. It reduces the actions of chemicals in the body
+        that cause inflammation, redness and swelling. it is typically used to treat inflammation of skin caused
+        by number of conditions such as allergic reactions, eczema or psoriasis.</string>
+    <string name="antiseptic">Antiseptic Liquid(povidone-iodine) is a potent typical used to prevent to treat infection in minor
+        wounds. It is effective at killing bacteria, viruses, fungi, protozoa, molds and yeast.</string>
+    <string name="antibiotic">Polymixin B Sulphate-Bacitracin zinc-Gramicidin contains a combination of antibiotics used
+        for the treatment of certain types of infetions caused by bacteria. The typical oinment can be used to treat
+        certain skin infections such as infected wounds, burns, skin grafts, boils and acne.</string>
+    <string name="gauge">Sterile gauze is used for absorbing fluids as well as dressing and protecting wounds. Sterile
+        gauze acts as a barrier to prevent contaminants from entering any wound area that it covers
+        and absorbs any blood or fluid that seeps out of the wound.</string>
+    <string name="tape">Surgical tape or medical tape is a type of pressure-sensitive adhesive tape used in medicine
+        and first aid to hold a bandage or other dressing onto a wound.</string>
+    <string name="bandages">An adhesive bandage, also called a sticking plaster(or simply plaster)in British English,
+        is a small medical dressing used for injuries not serious enough to require a full-size bandage.
+        They are also known by the genericized trademarks Band-Aid (as "band-aid" or "band aid" in the US) or
+        Elastoplast(in the UK).</string>
+    <string name="eleastic">An elastic bandage is a "stretchable bandage used to create localized pressure".
+        Elastic bandages are commonly used to treat muscle sprains and strains by reducing the flow of blood to
+        a particular area by the application of even stable pressure which can restrict swelling at the place of injury.</string>
+    <string name="splint">Casts and splints are hard wraps used to support and protect injured bones, ligaments, tendons
+        and other tissues. They help broken bones heal by keeping the broken ends together and as straight as possible.
+        Casts and splints also help relieve pain and swelling, and protect the injured area from more harm.</string>
+    <string name="wipes">alcohol wipes are designed to clean and for the convenient disinfection of smaller surfaces
+        and individual non invasive medical devices.</string>
 </resources>

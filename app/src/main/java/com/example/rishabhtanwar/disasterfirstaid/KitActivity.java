@@ -12,6 +12,8 @@ public class KitActivity extends AppCompatActivity {
             R.drawable.flashlight_extra_bateries,R.drawable.gloves,R.drawable.hydro_corcitone,R.drawable.mouth_pece_cpr,R.drawable.safety_pins,R.drawable.scissors,R.drawable.splint,R.drawable.sterile_gauge,R.drawable.thermometer,R.drawable.tooth_preservn_kit,R.drawable.wipes};
     private String [] mImageNames = new String[]{"Acetaminofin","Adhesive Bandage","Adhesive Tape","Antibiotic Ointment","Anticeptic Sol","Blanket","Calamine","Cold Packs","Elastic Bandage","Flashlight extra batteries","Gloves","Hydro Corcitone",
             "Mouthpiece CPR","Safety pins","Scissors","Splint","Sterile Gauge","Thermometer","Tooth preservation kit","Wipes"};
+    private int [] mImageDescription = new int[]{R.string.aceto,R.string.bandages,R.string.tape,R.string.antibiotic,R.string.antiseptic,R.string.blanket,R.string.calamine,R.string.cold,R.string.eleastic,
+            R.string.flash_light,R.string.gloves,R.string.hydro,R.string.mouthpiece,R.string.pins,R.string.scissors,R.string.splint,R.string.gauge,R.string.thermometer,R.string.tooth,R.string.wipes};
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -22,7 +24,7 @@ public class KitActivity extends AppCompatActivity {
 
     public void initRecyclerView(){
         RecyclerView recyclerView = findViewById(R.id.kit_recycler_view);
-        KitRecyclerViewAdapter adapter = new KitRecyclerViewAdapter(mImages,mImageNames);
+        KitRecyclerViewAdapter adapter = new KitRecyclerViewAdapter(KitActivity.this,mImages,mImageNames,mImageDescription);
         recyclerView.setLayoutManager(new GridLayoutManager(KitActivity.this,2));
         recyclerView.setAdapter(adapter);
     }

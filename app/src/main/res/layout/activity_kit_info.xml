@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/kit_id"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Calamine"
+        android:textSize="20sp"
+        android:background="#6200FF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"/>
+
+    <RelativeLayout
+        android:id="@+id/lay"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kit_id">
+        <ImageView
+            android:id="@+id/kit_item"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:padding="10dp"
+            android:src="@drawable/calamine" />
+    </RelativeLayout>
+    <LinearLayout
+        android:background="#fff"
+        android:layout_below="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/kit_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Emergency_activity"
+            android:textSize="15sp"
+            android:textColor="#636363"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
